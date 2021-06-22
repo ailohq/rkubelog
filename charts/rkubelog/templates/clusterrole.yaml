@@ -4,7 +4,6 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  namespace: default
   name: rkubelog-reader
 rules:
 - apiGroups: [""] # "" indicates the core API group

@@ -1,7 +1,7 @@
 # Copyright 2019 SolarWinds Worldwide, LLC.
 # SPDX-License-Identifier: Apache-2.0
 
-name: rkubelog
+name: Test
 on:
   push:
     branches:
