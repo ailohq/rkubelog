@@ -3,3 +3,4 @@ run.sh
 bin/
 db/
 *.config
+.cr-release-packages
