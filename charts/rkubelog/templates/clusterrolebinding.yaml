@@ -17,4 +17,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: rkubelog-sa
-  namespace: {{ .Release.Namespace }}
+  namespace: kube-system
