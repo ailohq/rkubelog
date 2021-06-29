@@ -5,7 +5,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: "rkubelog"
-  namespace: "default"
   labels:
     app: rkubelog
 spec:
