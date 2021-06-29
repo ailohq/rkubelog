@@ -109,6 +109,7 @@ If the problem persists, please open an issue.
 
 ```sh
 export GITHUB_TOKEN=...
+rm -r .cr-release-packages
 docker run -w /app -v (pwd):/app --entrypoint /usr/local/bin/cr quay.io/helmpack/chart-releaser package charts/rkubelog
 docker run -w /app -v (pwd):/app --entrypoint /usr/local/bin/cr quay.io/helmpack/chart-releaser upload --owner ailohq --git-repo rkubelog --token $GITHUB_TOKEN
 ```
