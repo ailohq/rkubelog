@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: rkubelog-env
 data:
-  PAPERTRAIL_PROTOCOL: {{ .Values.papertrail.protocol }}
-  PAPERTRAIL_HOST: {{ .Values.papertrail.host }}
-  PAPERTRAIL_PORT: {{ .Values.papertrail.port | toString }}
+  PAPERTRAIL_PROTOCOL: "{{ .Values.papertrail.protocol }}"
+  PAPERTRAIL_HOST: "{{ .Values.papertrail.host }}"
+  PAPERTRAIL_PORT: "{{ .Values.papertrail.port | toString }}"
   LOGGLY_TOKEN: "{{ .Values.loggly.token }}"
   TAGS: "{{ .Values.tags }}"
