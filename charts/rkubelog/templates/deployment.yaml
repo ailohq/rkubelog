@@ -20,7 +20,7 @@ spec:
     spec:
       serviceAccountName: rkubelog-sa
       containers:
-      - image: quay.io/solarwinds/rkubelog:r18
+      - image: "{{ .Values.dockerImage }}"
         imagePullPolicy: Always
         name: "rkubelog"
         command:

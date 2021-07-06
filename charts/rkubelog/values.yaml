@@ -1,3 +1,5 @@
+dockerImage: "quay.io/solarwinds/rkubelog:r18"
+
 # Static tags which will get sent with all the logs.
 # If you are using several instances of `rKubeLog`, you can use this `TAGS` field to differentiate between the logs from the different environments.
 tags: ""
