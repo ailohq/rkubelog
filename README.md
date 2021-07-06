@@ -103,7 +103,7 @@ If the problem persists, please open an issue.
 
 # Releasing helm chart
 
-1. Bump version in `charts/rkubelog/Chart.yaml`
+1. Bump version in `charts/rkubelog/Chart.yaml` and commit it.
 
 2. Run:
 
