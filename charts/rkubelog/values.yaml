@@ -16,3 +16,5 @@ papertrail:
 loggly:
   # Leave empty to disable Loggly
   token: ""
+
+resources: {}
