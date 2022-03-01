@@ -28,3 +28,7 @@ spec:
         envFrom:
           - configMapRef:
               name: "rkubelog-env"
+        {{- if .Values.resources }}
+        resources:
+{{ toYaml .Values.resources | indent 10 }}
+        {{- end }}
