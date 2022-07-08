@@ -18,6 +18,10 @@ spec:
         kail.ignore: "true"
         app: rkubelog
     spec:
+    {{- if .Values.affinity }}
+      affinity:
+{{ toYaml .Values.affinity | indent 8 }}
+      {{- end }}
       serviceAccountName: rkubelog-sa
       containers:
       - image: "{{ .Values.dockerImage }}"
@@ -25,6 +29,8 @@ spec:
         name: "rkubelog"
         command:
         - /app/rkubelog
+        args:
+{{ toYaml .Values.arguments | indent 10 }}
         envFrom:
           - configMapRef:
               name: "rkubelog-env"
