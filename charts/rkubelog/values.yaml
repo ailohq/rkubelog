@@ -18,3 +18,7 @@ loggly:
   token: ""
 
 resources: {}
+
+affinity: {}
+
+arguments: []
